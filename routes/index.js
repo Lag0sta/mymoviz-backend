@@ -21,7 +21,7 @@ router.get('/movies',(req,res) => {
     .then(data => {
         //console.log(data)
         console.log(data)
-        res.json({movieInfos: data})
+        res.json({movies: data.results})
     }
         )
 })
